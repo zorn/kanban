@@ -7,6 +7,9 @@ ARG RUNNER_IMG="debian:${DEB_VSN}"
 
 FROM ${BUILDER_IMG} as builder
 
+# Work around JIT multi-architecture bug.
+ENV ERL_FLAGS="+JPperf true"
+
 WORKDIR /app
 
 RUN mix local.hex --force && \
