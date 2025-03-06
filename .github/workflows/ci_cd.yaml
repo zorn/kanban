@@ -59,3 +59,6 @@ jobs:
 
       - name: Dialyzer static analysis
         run: mix dialyzer --format github
+
+      - name: Check unused dependencies
+        run: mix deps.unlock --check-unused
