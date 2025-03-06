@@ -66,3 +66,7 @@ npm-debug.log
 
 # Ignore my fish local dev environments file.
 config.fish
+
+# Ignore dialyzer files.
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
