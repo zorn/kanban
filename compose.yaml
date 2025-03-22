@@ -22,7 +22,7 @@ services:
       - db_data:/var/lib/postgresql/data
 
   web:
-    image: ${WEB_IMAGE:-ghcr.io/beamops/kanban:latest}
+    image: ${WEB_IMAGE:-ghcr.io/zorn/kanban:latest}
     deploy:
       restart_policy:
         condition: on-failure
