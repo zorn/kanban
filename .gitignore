@@ -70,3 +70,6 @@ config.fish
 # Ignore dialyzer files.
 /priv/plts/*.plt
 /priv/plts/*.plt.hash
+
+# Ignore .pem files
+*.pem
